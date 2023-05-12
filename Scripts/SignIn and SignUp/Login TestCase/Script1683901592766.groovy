@@ -17,3 +17,38 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('https://login.test.striven.com/Security/Login.aspx')
+
+
+WebUI.setText(findTestObject('Object Repository/SignIn/Page_Striven/input_Sign in_ctl00ctl00mainContentmainCont_49a1e1'), 
+    'v.b@mail.com')
+
+WebUI.setEncryptedText(findTestObject('Object Repository/SignIn/Page_Striven/input_Sign in_ctl00ctl00mainContentmainCont_755761'), 
+    'y0uAm98JxwZOR8I1A6GFzQ==')
+
+WebUI.click(findTestObject('Object Repository/SignIn/Page_Striven/input_Email Activation_ctl00ctl00mainConten_95bee1'))
+
+WebUI.setText(findTestObject('Object Repository/SignIn/Page_Striven/input_Remember this device for 30 days_ctl0_098541'), 
+    '589452')
+
+WebUI.click(findTestObject('Object Repository/SignIn/Page_Striven/input_Remember this device for 30 days_ctl0_6a76c4'))
+
+WebUI.click(findTestObject('Object Repository/SignIn/Page_Striven/span_Owens Corning'))
+
+WebUI.click(findTestObject('Object Repository/SignIn/Page_My Profile - Info/img_Striven Website_rounded-circle show'))
+
+WebUI.click(findTestObject('Object Repository/SignIn/Page_My Profile - Info/span_My Profile'))
+
+WebUI.verifyElementText(findTestObject('Object Repository/SignIn/Page_My Profile - Info/div_v.bmail.com'), 'v.b@mail.com')
+
+WebUI.click(findTestObject('Object Repository/SignIn/Page_My Profile - Info/img_Striven Website_rounded-circle show'))
+
+WebUI.click(findTestObject('Object Repository/SignIn/Page_My Profile - Info/span_Log Out'))
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/SignIn/Page_Striven/input_Email Activation_ctl00ctl00mainConten_95bee1'), 
+    0)
+
+WebUI.closeBrowser()
+
