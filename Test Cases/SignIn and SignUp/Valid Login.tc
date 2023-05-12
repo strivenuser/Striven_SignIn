@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Valid_Login</name>
+   <name>Valid Login</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>fceac982-09d7-48e6-8ec2-d85d38a1aa5a</testCaseGuid>
+   <testCaseGuid>9a6f7496-e462-47c3-a09b-79fb3dac510a</testCaseGuid>
 </TestCaseEntity>
