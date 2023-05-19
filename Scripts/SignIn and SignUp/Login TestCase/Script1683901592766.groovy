@@ -51,5 +51,5 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/SignIn/Page_Striven
 
 WebUI.closeBrowser()
 
-WebUI.acceptAlert()
+WebUI.verifyAlertPresent(0)
 
