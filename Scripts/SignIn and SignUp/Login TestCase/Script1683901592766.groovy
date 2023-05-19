@@ -21,7 +21,6 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://login.test.striven.com/Security/Login.aspx')
 
-
 WebUI.setText(findTestObject('Object Repository/SignIn/Page_Striven/input_Sign in_ctl00ctl00mainContentmainCont_49a1e1'), 
     'v.b@mail.com')
 
@@ -51,4 +50,6 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/SignIn/Page_Striven
     0)
 
 WebUI.closeBrowser()
+
+WebUI.acceptAlert()
 
